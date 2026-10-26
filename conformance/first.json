@@ -1,0 +1,98 @@
+{
+  "candidate": "|D| >= max(gamma(G)*|projection_H(D)|, gamma(H)*|projection_G(D)|)",
+  "domain": "all dominating subsets of Pn square Pm for 2<=n,m<=4",
+  "cases": [
+    {
+      "G": "P2",
+      "H": "P2",
+      "dominating_sets": 11,
+      "minimum_size": 2,
+      "projection_bound_failures": 0
+    },
+    {
+      "G": "P2",
+      "H": "P3",
+      "dominating_sets": 41,
+      "minimum_size": 2,
+      "projection_bound_failures": 0
+    },
+    {
+      "G": "P2",
+      "H": "P4",
+      "dominating_sets": 149,
+      "minimum_size": 3,
+      "projection_bound_failures": 12
+    },
+    {
+      "G": "P3",
+      "H": "P2",
+      "dominating_sets": 41,
+      "minimum_size": 2,
+      "projection_bound_failures": 0
+    },
+    {
+      "G": "P3",
+      "H": "P3",
+      "dominating_sets": 291,
+      "minimum_size": 3,
+      "projection_bound_failures": 0
+    },
+    {
+      "G": "P3",
+      "H": "P4",
+      "dominating_sets": 2069,
+      "minimum_size": 4,
+      "projection_bound_failures": 196
+    },
+    {
+      "G": "P4",
+      "H": "P2",
+      "dominating_sets": 149,
+      "minimum_size": 3,
+      "projection_bound_failures": 12
+    },
+    {
+      "G": "P4",
+      "H": "P3",
+      "dominating_sets": 2069,
+      "minimum_size": 4,
+      "projection_bound_failures": 196
+    },
+    {
+      "G": "P4",
+      "H": "P4",
+      "dominating_sets": 28661,
+      "minimum_size": 4,
+      "projection_bound_failures": 3080
+    }
+  ],
+  "counterexample": {
+    "G": "P2",
+    "H": "P4",
+    "gamma_G": 1,
+    "gamma_H": 2,
+    "D": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "size": 3,
+    "projection_G": 2,
+    "projection_H": 3,
+    "candidate_bound": 4,
+    "row_sizes": [
+      2,
+      1
+    ]
+  },
+  "status": "candidate falsified; corrected overlap inequality open; existing Vizing program unchanged"
+}
